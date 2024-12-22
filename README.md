@@ -190,7 +190,7 @@ agent = create_openai_tools_agent(llm, tools, prompt)
 executor = AgentExecutor(agent=agent, tools=tools, verbose=True)
 
 # Example Query
-response = executor.run("Find the latest AI trends and summarize generative AI.")
+response = executor.invoke("Find the latest AI trends and summarize generative AI.")
 print(response)
 ```
 
